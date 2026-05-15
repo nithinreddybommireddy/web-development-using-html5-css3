@@ -1,0 +1,70 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table class="pricing-table">
+        <caption id="caption"><strong>Netflix Plan Comparison</strong></caption>
+        <thead>
+    <tr id="table-heading">
+        <th>Plan</th>
+        <th>Monthly Price</th>
+        <th>Resolution</th>
+    </tr>
+        </thead>
+        <tbody>
+    <tr>
+    <td><strong>Standard</strong></td>
+    <td>$15.49</td>
+    <td>1080p</td>
+    </tr>
+        
+    <tr>
+        <td><strong>Premium</strong></td>
+        <td>$22.99</td>
+        <td>4k + HDR</td>
+    </tr>
+        </tbody>
+    </table>
+    </body>
+</html>
+
+/* CSS */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    padding: 50px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+caption{
+    text-align: left;
+}
+th{
+    background-color: red;
+}
+    
+}
+
+
+/* TASK: Add styles for th and td 
+   - padding: 15px
+   - border-bottom: 1px solid #333
+*/
+
+// JS
