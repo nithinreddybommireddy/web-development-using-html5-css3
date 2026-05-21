@@ -1,0 +1,56 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnb Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <span class="rare-find">Rare find</span>
+        <h3>Eco-friendly Cabin in the Woods</h3>
+        <p>Price: <span class="price" style="color:red; font-weight:bold;">$120</span> / night</p>
+        <a href="#">View Details</a>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: Circular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+.rare-find {
+    background-color: #008489;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.card a{
+    color: #484848;
+    text-decoration: none;
+}
+.card a:hover {
+    text-decoration: underline;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* TASK: Write your CSS below */
+
+// JS
