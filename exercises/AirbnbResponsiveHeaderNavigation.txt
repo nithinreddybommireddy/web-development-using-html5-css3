@@ -1,0 +1,84 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnb Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        
+        <div class="logo">
+            <strong style="color: #ff385c; font-size: 24px;">airbnb</strong>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations">
+        </div>
+        
+        <div class="user-actions">
+            <a href="#" class="host-link">Airbnb your home</a>
+            <button class="profile-btn">Profile</button>
+        </div>
+        
+    </header>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+/* TASK 1: Configure the main header flex container */
+.main-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; 
+    border-bottom: 1px solid #ebebeb;
+    
+    
+}
+
+/* TASK 2: Configure the user actions sub-container */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+    
+}
+
+/* Basic styling for the search bar and buttons (Do not change) */
+.search-bar input {
+    padding: 12px 24px;
+    border-radius: 24px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    width: 300px;
+    outline: none;
+}
+
+.host-link {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-btn {
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 8px 16px;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+// JS
