@@ -1,0 +1,70 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breaking News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main id="main-content">
+        
+        <article class="story">
+            
+            <header class="story-header">
+                <h1>Breaking News: Mars Rover Discovers Ice</h1>
+                <p>By Science Desk</p>
+            </header>
+            
+            <p>The rover has successfully extracted core samples indicating the presence of subterranean ice on the red planet.</p>
+            <p>Scientists anticipate new discoveries in the coming weeks as data continues to stream back to Earth.</p>
+            
+        </article>
+        
+    </main>
+
+    <footer id="site-footer">
+        <p>&copy; 2024 The Daily News | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-content {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.story-header {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.story-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+#site-footer {
+    font-size: 14px;
+    color: #666;
+}
+
+// JS
