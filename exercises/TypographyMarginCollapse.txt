@@ -1,0 +1,66 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medium Typography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="article-container">
+        <p class="lead-paragraph">Welcome to the new typography standards. This introduction sets the stage for the rest of the content.</p>
+        
+        <h2 class="section-heading">Understanding the Layout</h2>
+        
+        <p class="body-text">This is the main body text. It sits neatly below the section heading without adding any extra top margin.</p>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: "Georgia", serif;
+    background-color: #fafafa;
+    color: #242424;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.article-container {
+    background-color: white;
+    width: 500px;
+    padding: 32px;
+    border: 1px solid #e2e2e2;
+    /* TASK 1: Add padding and border here */
+    
+}
+
+.lead-paragraph {
+    font-size: 1.2rem;
+    color: #6b6b6b;
+    margin-top: 0;
+    margin-bottom: 20px;
+    /* TASK 2: Set margin-bottom */
+    
+}
+
+.section-heading {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    /* TASK 3: Deal with margin collapse by setting top and bottom margins */
+    
+}
+
+.body-text {
+    line-height: 1.6;
+    margin-top: 0;
+    /* TASK 4: Set margin-top to 0 */
+    
+}
+
+// JS
