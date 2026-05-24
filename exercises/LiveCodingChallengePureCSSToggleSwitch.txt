@@ -1,0 +1,103 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="settings-panel">
+        <span class="setting-name">Airplane Mode</span>
+        
+        <div class="toggle-container">
+            <input type="checkbox" id="airplane-mode" class="toggle-input">
+            <label for="airplane-mode" class="toggle-label"></label>
+        </div>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.settings-panel {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.setting-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.toggle-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* TASK 1: Visually hide the native checkbox */
+.toggle-input {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    
+}
+
+/* TASK 2: Style the label as the pill background */
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 26px;
+    border-radius: 26px;
+    background-color: #cccccc ;
+    transition: background-color 0.3s ease;
+    
+    
+    
+}
+
+/* TASK 3: Create the circular knob inside the label */
+.toggle-label::after {
+    
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+/* TASK 4: Change the background color when checked */
+.toggle-input:checked + .toggle-label {
+    
+    background-color: #4cd964;
+}
+
+/* TASK 5: Move the knob to the right when checked */
+.toggle-input:checked + .toggle-label::after {
+    
+    transform: translateX(24px);
+}
+
+// JS
