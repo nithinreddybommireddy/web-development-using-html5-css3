@@ -1,0 +1,91 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creator Studio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="studio-grid">
+        <aside class="sidebar">
+            <h2>Studio</h2>
+            <ul>
+                <li>Dashboard</li>
+                <li>Content</li>
+                <li>Analytics</li>
+            </ul>
+        </aside>
+        
+        <header class="header">
+            <h3>Channel Dashboard</h3>
+        </header>
+        
+        <main class="stats">
+            <h4>Latest Video Performance</h4>
+            <p>Views: 12,450</p>
+        </main>
+        
+        <section class="comments">
+            <h4>Recent Comments</h4>
+            <p>"Great video! Keep it up."</p>
+        </section>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Base styles for the visual boxes */
+.sidebar, .header, .stats, .comments {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* TASK 1, 2 & 3: Configure the main Grid container */
+.studio-grid {
+    height: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 250px repeat(2, 1fr);
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "sidebar header header" "sidebar stats comments";
+}
+    
+    
+    
+
+
+/* TASK 4: Assign the items to their specific grid areas */
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.stats {
+    grid-area: stats;
+    
+}
+
+.comments {
+    grid-area: comments;
+    
+}
+
+// JS
