@@ -1,0 +1,100 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="table-container">
+        <table id="financial-report">
+            <caption>Q3 Financial Summary</caption>
+            
+            <thead >
+                
+                <th scope="col">Quarter</th>
+                <th scope="col">Revenue</th>
+                <th scope="col">Profit</th>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Q1</th>
+                <td >$1.2M</td>
+                <td>$300K</td>
+            </tr>
+            <tr>
+                <th scope="row">Q2</th>
+                <td>$1.5M</td>
+                <td>$450K</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                
+                <th scope="row" colspan="2">Total YTD</th>
+                <td>$750K</td>
+            </tr>
+            </tfoot>
+            
+        </table>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.table-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    text-align: left;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #333;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+thead th {
+    background-color: #f8fafc;
+    color: #475569;
+}
+
+tbody th {
+    font-weight: 500;
+    color: #334155;
+    background-color: #fdfdfd;
+}
+
+tfoot th, tfoot td {
+    font-weight: bold;
+    background-color: #f1f5f9;
+    border-bottom: none;
+    color: #0f172a;
+}
+
+// JS
