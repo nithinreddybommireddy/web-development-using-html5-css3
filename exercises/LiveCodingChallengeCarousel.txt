@@ -1,0 +1,117 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="carousel">
+        <input type="radio" name="slider" id="slide1" class="carousel-input" checked>
+        <input type="radio" name="slider" id="slide2" class="carousel-input">
+        <input type="radio" name="slider" id="slide3" class="carousel-input">
+
+        <div class="carousel-track">
+            <div class="slide" style="background-color: #ff3b30;">Slide 1</div>
+            <div class="slide" style="background-color: #007aff;">Slide 2</div>
+            <div class="slide" style="background-color: #34c759;">Slide 3</div>
+        </div>
+
+        <div class="carousel-nav">
+            <label for="slide1" class="nav-dot"></label>
+            <label for="slide2" class="nav-dot"></label>
+            <label for="slide3" class="nav-dot"></label>
+        </div>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Base styles for the slides and dots (Do not modify) */
+.slide {
+    width: 33.33%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Active dot styling */
+#slide1:checked ~ .carousel-nav label[for="slide1"],
+#slide2:checked ~ .carousel-nav label[for="slide2"],
+#slide3:checked ~ .carousel-nav label[for="slide3"] {
+    background-color: white;
+}
+
+/* TASK 1: Hide the radio inputs */
+.carousel-input {
+    
+    opacity: 0;
+    position: absolute;
+}
+
+/* TASK 2: Make the container a masking window */
+.carousel {
+    position: relative;
+    width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    
+    
+}
+
+/* TASK 3: Setup the long moving track */
+.carousel-track {
+    
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* TASK 4: Shift the track when Slide 2 is selected */
+#slide2:checked ~ .carousel-track {
+    
+    transform: translateX(-33.33%);
+}
+
+/* TASK 5: Shift the track when Slide 3 is selected */
+#slide3:checked ~ .carousel-track {
+    
+    transform: translateX(-66.66%);
+}
+
+// JS
