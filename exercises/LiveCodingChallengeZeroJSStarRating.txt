@@ -1,0 +1,92 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="review-panel">
+        <h2>Rate your product</h2>
+        
+        <div class="rating-widget">
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5" class="star">&#9733;</label>
+
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4" class="star">&#9733;</label>
+
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3" class="star">&#9733;</label>
+
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2" class="star">&#9733;</label>
+
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1" class="star">&#9733;</label>
+        </div>
+    </div>
+
+</body>
+</html>
+
+/* CSS */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.review-panel {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.review-panel h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.star {
+    font-size: 3rem;
+    color: #e4e5e9; /* Default gray */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* TASK 1: Reverse the visual order using flexbox */
+.rating-widget {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
+/* TASK 2: Hide the radio buttons */
+.rating-widget input {
+    display: none;
+    
+}
+
+/* TASK 3: Color the hovered star and all subsequent sibling stars */
+.star:hover,
+.star:hover ~ .star {
+    color: #ffc107;
+    
+}
+
+/* TASK 4: Keep the stars colored when an input is checked */
+.rating-widget input:checked ~ .star {
+    color: #ffc107;
+}
+
+// JS
